@@ -2,32 +2,30 @@
 layout: default
 title: "Inspiration"
 ---
+
+<div class="quotes-introduction">
+<b>These are some of my favourite inspirational quotes. </b>
+</div>
+
 <div class="quotation">
-  Writing is an exploration. You start from nothing and learn as you go.<br> ~E. L. Doctorow
+  <p> "The journey is more fun if you know where you are going" ~John Maxwell </p>
+
+  <p> "Nearly all men can stand adversity, but if you want to test a man's character, give him power" ~Unknown </p>
+
+  <p> "We make a living by what we get, but we make a life by what we give" ~Winston Churchill </p>
+
+  <p> "Pursuing perfection really does matter, in a world highly accepting of mediocrity" ~Robin Sharma </p>
+
+  <p> "Life was always a matter of waiting for the right moment to act" ~Paulo Coelho </p>
+
+  <p> "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose." ~Steve Jobs </p>
+
+  <p> "Happiness is when what you think, what you say, and what you do are in harmony" ~Mahatma Gandhi </p>
+
+  <p> "When there is no enemy within, the enemy outside can do no harm" ~African proverb </p>
+
+  <p> "Awareness preceeds choice, preceeds results" ~Robin Sharma </p>
 </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    {% if post.path contains 'technology' %}
-      <div class="post">
-        <h1 class="post-title">
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h1>
-
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-      {% assign desc = post.content | split: '</p>' %}
-        {{ desc[0] }}
-        <br>
-        <a href="{{ post.url }}">
-            Read More...
-        </a>
-
-      </div>
-      <hr>
-    {% endif %}  
-  {% endfor %}
-</div>
 
 </div>

@@ -26,6 +26,12 @@
    .introduction{
      text-align: center;
    }
+
+   .quotes-introduction{
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 30px;
+  }
    
    .resume-section h1 {
      font-weight: lighter;
@@ -373,6 +379,12 @@
        color: #606060;
    }
    
+   .coming-soon {
+    height: 16em;
+    position: relative;
+    overflow: hidden;
+    }
+
    .btn {
      padding: 5px 15px;
      text-decoration: none;
@@ -459,5 +471,5 @@
      padding-right: 2.5em;
      padding-bottom: 2.5em;
      font-size: 1.5em;
-     text-align: center;
+     text-align: left;
    }
