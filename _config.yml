@@ -6,12 +6,13 @@ permalink:        pretty
 
 # Setup
 title:            Tanmay Fadnavis
-tagline:          'My Website'
+tagline:          'Portfolio'
 url:              https://tanmayfadnavis.github.io/
 
 author:
   name:           'Tanmay Fadnavis'
   url:            https://twitter.com/tanmayfadnavis
+  linkedin:       TanmayFadnavis
 
 paginate:         5
 
