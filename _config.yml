@@ -1,10 +1,9 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rogue
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Tanmay Fadnavis
@@ -19,6 +18,10 @@ paginate:         5
 
 # Custom vars
 version:          2.1.0
+
+plugins: 
+  - jekyll-paginate
+  - jekyll-gist
 
 github:
   repo:           https://github.com/TanmayFadnavis
