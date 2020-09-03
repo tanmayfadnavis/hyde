@@ -1,4 +1,6 @@
-This is my personal website and WIP.
+Developed this personal website on github pages.The website is built on top of Hyde, which is 2 column Jekyll theme using html, css and javascript.
+
+![alt text](https://raw.githubusercontent.com/TanmayFadnavis/TanmayFadnavis.github.io/master/public/assets/profile.png)
 
 ## License
 
