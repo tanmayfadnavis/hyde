@@ -10,7 +10,6 @@ relative_permalinks: true
 title:            Tanmay Fadnavis
 tagline:          'My Website'
 url:              https://tanmayfadnavis.github.io/
-baseurl:          /
 
 author:
   name:           'Tanmay Fadnavis'
