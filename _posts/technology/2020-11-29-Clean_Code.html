@@ -1,0 +1,104 @@
+---
+layout: post
+title: Clean Code
+---
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Clean Code</title>
+    <style>
+       html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      p{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      While wondering about what I should write for my first ever tech blog, I figured why not go to the basics and apply the same principle here. So here I am talking about Clean Code and summarizing my learnings from <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook-dp-B001GSTOAM/dp/B001GSTOAM/ref=mt_other?_encoding=UTF8&me=&qid=1606689646" target="_blank">Clean Code by Uncle Bob</a>
+    </p>
+
+    <h3> So what is clean code? </h3>
+    <p> Any code which is easy to understand, debug and maintain is clean code. The only valid measurement of code quality is number of wtfs/minute. As per Bjarne Stroustrup: "I like my code to be elegant and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy
+        and performance close to optimal so as not to tempt people to make code messy by making unprinciples optimization. Clean code does one thing well."
+    </p>
+
+    <h3> Let's look at few steps we can follow which will help us in writing clean code.
+    </h3>
+
+    <section class="resume-section"><h1><div>Meaningful Names</div></h1></section>
+    <ul> 
+      <li> Use intention revealing names.</li>
+      <li> Avoid disinformation. Programmers must avoid leaving false clues that obscure the meaning of the code.</li>
+      <li> Spelling similar concepts similarly is information. Using inconsistent spellings is disinformation.</li>
+      <li> Make meaningful distinctions. Distinguish names in suchh a way that the reader knows what the differences are. Use searchable names/</li>
+      <li> The length of a name should correspond to the size of it's scope.</li>
+      <li> Avoid using puns, encodings and mental mapping. Class names should be nouns and method names should be verb.</li>
+    </ul>
+
+    <section class="resume-section"><h1><div>Functions</div></h1></section>
+    <ul> 
+      <li> The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that.</li>
+      <li> Blocks within if,else, while statements should be one line long. This also implies functions should not be large enough to hold nested structures..</li>
+      <li> Functions should do one thing. They should do it well. They should do it only.</li>
+      <li> Describe the function by describing it as a brief to a paragraph. Functions that do one thing cannot be reasonably divided into sections.</li>
+      <li> The ideal number of arguments for a function is zero; followed by one and two. Don't pass a boolean into a function, it's a terrible practice.</li>
+      <li> Functions should either do something or answer something, but not both. Either your function should change the state of an object, or it should return some information about that object.</li>
+    </ul>
+
+    <section class="resume-section"><h1><div>Comments and Formatting</div></h1></section>
+    <ul> 
+      <li>Don't comment bad code, re-write it.</li>
+      <li> Comments don't make up for bad code. The proper use of comments is to compensate for our failure to express ourself in code.</li>
+      <li> Information, explanation of intent, clarification, warning could be described by comments.</li>
+      <li> Code formatting is about communication; and communication is the professional developer's first order of business.</li>
+      <li>Concepts that are closely related should belong to a single file.</li>
+    </ul>
+
+    <section class="resume-section"><h1><div>Objects, Data Structures and Classes</div></h1></section>
+    <p> We don't want to expose the details of our data. Rather we want to express our data in abstract terms. Objects hide their data behind abstractions and expose functions that operate on that data. Keep your classes small in terms of responsibilities.
+      Single responsibility principle states that a class or module should have one, and only one reason to change. Have many, but smaller classes. 
+    </p>
+
+    <section class="resume-section"><h1><div>Error handling, Unit tests Et. Al</div></h1></section>
+    <p> Always use exceptions rather than error codes. Try to write tests that force exceptions and then add behaviours to your handler to satisfy your tests. You many not write production code until you have written a failing unit test.
+        Test code is just as important as production code. And always have single concept per test. Your tests should be fast, independent, repeatble and self-validating.
+    </p>
+
+
+    This is in no way an exhaustive list, but I hope this will act as a good atarting point on how to write clean code. Always remember to keep things simple, complexity kills - it sucks the life out of developers, it makes products difficult to plan,build and test.
+    A design must produce a system that acts as intended. Code should clearly express the intent of it's author. A design is simple if it follows the below rules:
+    <ul>
+      <li>Runs all the tests.</li>
+      <li>Contains no duplication.</li>
+      <li>Expresses the intent of the programmer.</li>
+      <li>Minimizes the number of classes and methods.</li>
+    </ul>
+
+    <h3> Happy Coding!! </h3>
+
+
+  </body>
+
+  </html>
+

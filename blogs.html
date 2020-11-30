@@ -2,6 +2,7 @@
 layout: default
 title: "Blogs"
 ---
+<!--
 <div class="quotation">
   “There is no greater agony than bearing an untold story inside you.” ~ Maya Angelou<br>
 </div>
@@ -10,8 +11,12 @@ title: "Blogs"
   <img src="/public/assets/comingsoon.jpg"
   alt="Orange" />
 </div>
+-->
 
-<!--
+<div class="quotation">
+  “There is no greater agony than bearing an untold story inside you.” ~ Maya Angelou<br>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
     {% if post.path contains 'technology' %}
@@ -32,7 +37,7 @@ title: "Blogs"
 
       </div>
       <hr>
-    {% endif %}  
+    {% endif %}    
   {% endfor %}
 </div>
--->
+
